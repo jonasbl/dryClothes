@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CheckWeatherViewController.h
 //  Dry Clothes
 //
 //  Created by Jonas Lauritsen on 03/08/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CheckWeatherViewController : UIViewController
 
 @end
-

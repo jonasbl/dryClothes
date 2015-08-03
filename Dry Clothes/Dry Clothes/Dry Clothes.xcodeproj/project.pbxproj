@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		DDAA771E1B6FA925004D2C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAA771D1B6FA925004D2C1B /* main.m */; };
 		DDAA77211B6FA925004D2C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAA77201B6FA925004D2C1B /* AppDelegate.m */; };
-		DDAA77241B6FA925004D2C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAA77231B6FA925004D2C1B /* ViewController.m */; };
 		DDAA77271B6FA925004D2C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAA77251B6FA925004D2C1B /* Main.storyboard */; };
 		DDAA77291B6FA925004D2C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAA77281B6FA925004D2C1B /* Images.xcassets */; };
 		DDAA772C1B6FA925004D2C1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAA772A1B6FA925004D2C1B /* LaunchScreen.xib */; };
 		DDAA77381B6FA926004D2C1B /* Dry_ClothesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAA77371B6FA926004D2C1B /* Dry_ClothesTests.m */; };
+		DDAA77431B6FABDB004D2C1B /* CheckWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAA77421B6FABDB004D2C1B /* CheckWeatherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		DDAA771D1B6FA925004D2C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDAA771F1B6FA925004D2C1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDAA77201B6FA925004D2C1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDAA77221B6FA925004D2C1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDAA77231B6FA925004D2C1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDAA77261B6FA925004D2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDAA77281B6FA925004D2C1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDAA772B1B6FA925004D2C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DDAA77311B6FA926004D2C1B /* Dry ClothesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dry ClothesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAA77361B6FA926004D2C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDAA77371B6FA926004D2C1B /* Dry_ClothesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dry_ClothesTests.m; sourceTree = "<group>"; };
+		DDAA77411B6FABDB004D2C1B /* CheckWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckWeatherViewController.h; sourceTree = "<group>"; };
+		DDAA77421B6FABDB004D2C1B /* CheckWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckWeatherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +81,9 @@
 		DDAA771A1B6FA925004D2C1B /* Dry Clothes */ = {
 			isa = PBXGroup;
 			children = (
+				DDAA77441B6FABE2004D2C1B /* ViewControllers */,
 				DDAA771F1B6FA925004D2C1B /* AppDelegate.h */,
 				DDAA77201B6FA925004D2C1B /* AppDelegate.m */,
-				DDAA77221B6FA925004D2C1B /* ViewController.h */,
-				DDAA77231B6FA925004D2C1B /* ViewController.m */,
 				DDAA77251B6FA925004D2C1B /* Main.storyboard */,
 				DDAA77281B6FA925004D2C1B /* Images.xcassets */,
 				DDAA772A1B6FA925004D2C1B /* LaunchScreen.xib */,
@@ -117,6 +116,15 @@
 				DDAA77361B6FA926004D2C1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDAA77441B6FABE2004D2C1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAA77411B6FABDB004D2C1B /* CheckWeatherViewController.h */,
+				DDAA77421B6FABDB004D2C1B /* CheckWeatherViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDAA77241B6FA925004D2C1B /* ViewController.m in Sources */,
+				DDAA77431B6FABDB004D2C1B /* CheckWeatherViewController.m in Sources */,
 				DDAA77211B6FA925004D2C1B /* AppDelegate.m in Sources */,
 				DDAA771E1B6FA925004D2C1B /* main.m in Sources */,
 			);
@@ -416,6 +424,7 @@
 				DDAA773D1B6FA926004D2C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDAA773E1B6FA926004D2C1B /* Build configuration list for PBXNativeTarget "Dry ClothesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				DDAA77401B6FA926004D2C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
